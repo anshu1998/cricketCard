@@ -1,0 +1,216 @@
+@import variables
+
+html, body
+    margin: 0
+    padding: 0
+    height: 100%
+    width: 100%
+    overflow: hidden
+    font-size: 2.5vmin
+    
+
+#preMatch, #postMatch,#firstInnings,#secondInnings
+    position: relative
+    height: 100%
+    width: 100%
+    
+//centre any element in a div------------------------------------------------------------------------starts here
+
+.XYCenterTheElement
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    margin: auto
+
+//centre any element in a div------------------------------------------------------------------------ends here
+
+
+//preMatch card styling------------------------------------------------------------------------------starts here
+.team1, .matchInfo, .team2
+    position: absolute
+    height: 100%
+    width: $cardOneDivWidthPercent
+    box-sizing: border-box
+    //border: 1px solid
+    
+
+.matchInfo
+    left: $cardOneDivWidthPercent
+    text-align: center
+    color: #055075
+    
+.team2
+    right: 0
+    
+.triangle    
+    position: absolute
+    height: 0
+    width: 0
+    display: inline-block
+    
+.roundImage
+    border-radius: 50%
+    
+    
+#triangleTopLeft
+    @extend .triangle
+    border-top: 100vh solid grey
+    border-right: $cardOneDivWidthVW solid transparent
+    
+#triangleBottomRight
+    @extend .triangle
+    border-bottom: 100vh solid grey
+    border-left: $cardOneDivWidthVW solid transparent
+    
+.playingTeamLogoPreMatch
+    @extend .roundImage
+    height: 40%
+    @extend .XYCenterTheElement
+    
+.matchInfo img
+    margin: 2vh auto
+    height: 66px
+
+#matchInfoText
+    position: relative
+    margin-top: 35%
+    line-height: 25%
+    height: 54%
+    
+
+//preMatch card styling------------------------------------------------------------------------------ends here
+
+
+//Web view header and footer styling--------------------------------------------------------------------------starts here
+
+.headerFooterCommonStyle
+    position: absolute
+    height: 10%
+    width: 100%
+    
+    
+.headerInternalDivsCommonStyles
+    position: absolute
+    display: inline-block
+    height: 100%
+
+    
+.header
+    @extend .headerFooterCommonStyle
+    top: 0
+    
+.footer
+    @extend .headerFooterCommonStyle
+    bottom: 0
+    
+    
+.headerFirstInternalDiv
+    @extend .headerInternalDivsCommonStyles
+    width: 15%
+
+.headerSecondInternalDiv
+    @extend .headerInternalDivsCommonStyles
+    width: 70%
+    left: 15%
+    border-bottom: 1px solid #ECECEC
+
+.headerThirdInternalDiv
+    @extend .headerInternalDivsCommonStyles
+    width: 15%
+    right: 0
+    border-bottom: 1px solid #ECECEC
+
+=animation($animation)
+    -webkit-animation: $animation 3s infinite
+    -moz-animation: $animation 3s infinite
+    -ms-animation: $animation 3s infinite
+    animation: $animation 3s infinite
+
+
+@keyframes liveBlinkAnimation
+    0%
+        opacity: 1
+    25%
+        opacity: 0
+    50%
+        opacity: 1
+    75%
+        opacity: 0
+    100%
+        opacity: 1
+
+
+.liveBlinkingCommonStyle
+    display: inline-block
+    position: absolute
+    top: 25%
+    +animation(liveBlinkAnimation)
+    
+
+    
+.liveBlinkingDot
+    @extend .roundImage
+    @extend .liveBlinkingCommonStyle
+    height: 20px
+    width: 20px
+    left: 10%
+    background-color: red
+
+.liveBlinkingMessage
+    @extend .liveBlinkingCommonStyle
+    left: 35%
+    font-size: 1.7em
+    color: red
+    
+.headerMessage, .footerMessage
+    color: #055075
+    font-size: 5vmin
+    text-align: center
+    padding-top: 1.5%
+
+.headerIPLLogo
+    @extend .XYCenterTheElement
+    height: 100%
+    margin-top: 5%
+    
+
+.footerMessage
+    padding-left: 2%
+    
+
+//Web view header and footer styling---------------------------------------------------------------------ends here
+
+//after Toss web view card styling------------------------------------------------------------------------starts here
+
+.afterTossCardBody
+    position: relative
+    height: 80%
+    top: 10%
+    //border: 1px solid
+
+.playingTeamLogoAfterToss
+    display: block
+    height: 40%
+    margin: 30% auto
+    
+
+.battingOrBowlingStatusLogo
+    position: absolute
+    height: 20%
+    top: 20%
+    right: 15%
+    
+    
+.liveBattingOrBowlingStatus
+    color: #055075
+    position: absolute
+    bottom: 20%
+    left: 38%
+    font-size: 6vmin
+    
+.matchInfoStatus
+    margin: 35% auto
+    font-size: 6vmin
+//after Toss web view card styling------------------------------------------------------------------------ends here
