@@ -1,8 +1,13 @@
-function test() {
-    var this_is_a_variable = 10;
+class IPL2017 extends UiHandler {}
 
-    alert(this_is_a_variable_new);
+let ipl = new IPL2017();
+
+ipl.getLiveMatchUniqueId();
+
+function start() {
+    ipl.getCricApiData();
+    setInterval(function () {
+        ipl.getCricApiData();
+    }, 5000);
 
 }
-
-test();
