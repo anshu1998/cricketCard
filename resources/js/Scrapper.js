@@ -49,6 +49,8 @@ class Scrapper {
 
     static scrapCricApiResponse(liveMatchData) {
 
+        //console.log(liveMatchData);
+
         matchData.team1 = iplTeamProps[matchData.currentMatch.team1];
         matchData.team2 = iplTeamProps[matchData.currentMatch.team2];
 
