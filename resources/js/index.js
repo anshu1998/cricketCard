@@ -8,6 +8,6 @@ function start() {
     ipl.getCricApiData();
     setInterval(function () {
         ipl.getCricApiData();
-    }, 5000);
+    }, 5000000);
 
 }

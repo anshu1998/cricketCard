@@ -1,5 +1,10 @@
 var iplScheduleJson = {
     "05/04/2017": {
+        "1600": {
+            "venue": "Rajiv Gandhi Intl. Cricket Stadium, Hyderabad",
+            "team1": "Malaysian Armed Forces",
+            "team2": "Universiti Kebangsaan Malaysia"
+        },
         "2000": {
             "venue": "Rajiv Gandhi Intl. Cricket Stadium, Hyderabad",
             "team1": "Sunrisers Hyderabad",
@@ -387,56 +392,59 @@ var iplScheduleJson = {
             "team1": "TBD",
             "team2": "TBD"
         }
-    },
-    "04/04/2017": {
-        "1600": {
-            "venue": "Rajiv Gandhi Intl. Cricket Stadium, Hyderabad",
-            "team1": "Mashonaland Eagles",
-            "team2": "Mid West Rhinos"
-        }
     }
 };
 
-var iplTeamJersyColors = {
+var iplTeamProps = {
     "Delhi Daredevils": {
         "jersyColor": "#004589",
-        "shortName": "DD"
+        "shortName": "DD",
+        "logo": "images/DDD.jpg"
     },
     "Gujarat Lions": {
-        "jersyColor": "#ca5e10",
-        "shortName": "GL"
+        "jersyColor": "#692c13",
+        "shortName": "GL",
+        "logo": "images/GL.png"
     },
     "Kings XI Punjab": {
-        "jersyColor": "#9d2424",
-        "shortName": "KXIP"
+        "jersyColor": "#c10019",
+        "shortName": "KXIP",
+        "logo": "images/KP.png"
     },
     "Kolkata Knight Riders": {
         "jersyColor": "#3d275d",
-        "shortName": "KKR"
+        "shortName": "KKR",
+        "logo": "images/KKR.jpg"
     },
     "Mumbai Indians": {
         "jersyColor": "#005597",
-        "shortName": "MI"
+        "shortName": "MI",
+        "logo": "images/MI.jpg"
     },
     "Rising Pune Supergiant": {
-        "jersyColor": "#253e60",
-        "shortName": "RPS"
+        "jersyColor": "#382858",
+        "shortName": "RPS",
+        "logo": "images/RPS.png"
     },
     "Royal Challengers Bangalore": {
         "jersyColor": "#fd0021",
-        "shortName": "RCB"
+        "shortName": "RCB",
+        "logo": "images/RCB.jpg"
     },
     "Sunrisers Hyderabad": {
         "jersyColor": "#004589",
-        "shortName": "SRH"
+        "shortName": "SRH",
+        "logo": "images/SRH.jpg"
     },
-    "Mashonaland Eagles": {
+    "Malaysian Armed Forces": {
         "jersyColor": "green",
-        "shortName": "ME"
+        "shortName": "ME",
+        "logo": "images/DDD.jpg"
     },
-    "Mid West Rhinos": {
+    "Universiti Kebangsaan Malaysia": {
         "jersyColor": "red",
-        "shortName": "MWR"
+        "shortName": "MWR",
+        "logo": "images/MI.jpg"
     }
 };
 
@@ -447,4 +455,6 @@ var matchData = {
     "winningTeam": "",
     "loosingTeam": "",
     "currentScore": "",
+    "battingStatusLogo": "images/Bat.png",
+    "bowlingStatusLogo": "images/Ball.png",
 };

@@ -8,7 +8,7 @@ html, body {
   font-size: 2.5vmin; }
 
 /* line 12, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
-#preMatch, #postMatch, #firstInnings {
+#preMatch, #postMatch, #firstInnings, #secondInnings {
   position: relative;
   height: 100%;
   width: 100%; }
@@ -150,7 +150,7 @@ html, body {
 /* line 167, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
 .headerMessage, .footerMessage {
   color: #055075;
-  font-size: 5vmin;
+  font-size: 4vmin;
   text-align: center;
   padding-top: 1.5%; }
 
@@ -187,8 +187,8 @@ html, body {
   color: #055075;
   position: absolute;
   bottom: 20%;
-  left: 38%;
-  font-size: 6vmin; }
+  left: 30%;
+  font-size: 4vmin; }
 
 /* line 213, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
 .matchInfoStatus {
