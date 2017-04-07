@@ -5,22 +5,21 @@ class UiHandler extends Scrapper {
         return document.querySelector(selector);
     }
     static updateUi(liveMatchData) {
-        //console.log(liveMatchData["innings-requirement"]);
-
-        document.title = liveMatchData["score"];
-        UiHandler.getElement(".footerMessage").innerText = liveMatchData["innings-requirement"];
-        UiHandler.getElement("#preMatch #stadiumName").innerText = matchData.currentMatch.venue;
 
 
-        if (liveMatchData["innings-requirement"].includes('Match scheduled to begin') == true) {
+        if (liveMatchData["innings-requirement"].includes('Match scheduled to begin')) {
+
             UiHandler.getElement('#preMatch').style.display = "block";
-            //UiHandler.getElement('#preMatch .headerThirdInternalDiv').style.display = 'none';
+            UiHandler.getElement(".matchInfoLiveStatus").innerHTML = "Stay Tunes<br>For Live Updates";
 
-        } else if (liveMatchData["innings-requirement"].includes("the toss") == true) {
+            document.title = liveMatchData["innings-requirement"];
+
+
+        } else if (liveMatchData["innings-requirement"].includes("the toss")) {
             UiHandler.getElement('#firstInnings').style.display = "block";
             UiHandler.getElement('#firstInnings .headerThirdInternalDiv').style.display = 'block';
 
-        } else if (liveMatchData["innings-requirement"].includes("require another") == true) {
+        } else if (liveMatchData["innings-requirement"].includes("require another")) {
             UiHandler.getElement('#secondInnings').style.display = "block";
             UiHandler.getElement('#secondInnings .headerThirdInternalDiv').style.display = 'block';
 
@@ -28,8 +27,18 @@ class UiHandler extends Scrapper {
 
             UiHandler.getElement('#postMatch').style.display = "block";
             UiHandler.getElement("#postMatch .headerThirdInternalDiv").style.display = 'none';
+            UiHandler.getElement("#postMatch .team1 .liveBattingOrBowlingStatus").innerText = matchData.team1.score;
+            UiHandler.getElement("#postMatch .team2 .liveBattingOrBowlingStatus").innerText = matchData.team2.score;
 
         }
+
+        if (!liveMatchData["innings-requirement"].includes('Match scheduled to begin'))
+            document.title = liveMatchData["score"];
+
+        UiHandler.getElement(".footerMessage").innerText = liveMatchData["innings-requirement"];
+        UiHandler.getElement("#preMatch #stadiumName").innerText = matchData.currentMatch.venue;
+
+
 
 
         if (matchData.currentMatchHourSlot == '1600')

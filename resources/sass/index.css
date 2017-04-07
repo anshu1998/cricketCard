@@ -5,15 +5,16 @@ html, body {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  font-size: 2.5vmin; }
+  font-size: 2.5vmin;
+  font-family: Roboto-Regular; }
 
-/* line 12, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
+/* line 13, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
 #preMatch, #postMatch, #firstInnings, #secondInnings {
   position: relative;
   height: 100%;
   width: 100%; }
 
-/* line 19, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
+/* line 20, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
 .XYCenterTheElement, .playingTeamLogoPreMatch, .headerIPLLogo {
   position: absolute;
   top: 0;
@@ -22,91 +23,95 @@ html, body {
   right: 0;
   margin: auto; }
 
-/* line 31, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
+/* line 32, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
 .team1, .matchInfo, .team2 {
   position: absolute;
   height: 100%;
   width: 33.33333%;
   box-sizing: border-box; }
 
-/* line 39, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
+/* line 40, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
 .matchInfo {
   left: 33.33333%;
   text-align: center;
   color: #055075; }
 
-/* line 44, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
+/* line 45, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
 .team2 {
   right: 0; }
 
-/* line 47, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
+/* line 48, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
 .triangle, #triangleTopLeft, #triangleBottomRight {
   position: absolute;
   height: 0;
   width: 0;
   display: inline-block; }
 
-/* line 53, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
+/* line 54, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
 .roundImage, .playingTeamLogoPreMatch, .liveBlinkingDot {
   border-radius: 50%; }
 
-/* line 57, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
+/* line 58, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
 #triangleTopLeft {
   border-top: 100vh solid grey;
   border-right: 33.33333vw solid transparent; }
 
-/* line 62, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
+/* line 63, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
 #triangleBottomRight {
   border-bottom: 100vh solid grey;
   border-left: 33.33333vw solid transparent; }
 
-/* line 67, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
+/* line 68, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
 .playingTeamLogoPreMatch {
   height: 40%; }
 
-/* line 72, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
+/* line 73, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
 .matchInfo img {
   margin: 2vh auto;
   height: 66px; }
 
-/* line 76, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
+/* line 77, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
 #matchInfoText {
   position: relative;
   margin-top: 35%;
   line-height: 25%;
   height: 54%; }
 
-/* line 88, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
+/* line 83, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
+#preMatch .matchInfo {
+  font-size: 4vmin; }
+
+/* line 92, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
 .headerFooterCommonStyle, .header, .footer {
   position: absolute;
   height: 10%;
   width: 100%; }
 
-/* line 94, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
+/* line 98, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
 .headerInternalDivsCommonStyles, .headerFirstInternalDiv, .headerSecondInternalDiv, .headerThirdInternalDiv {
   position: absolute;
   display: inline-block;
   height: 100%; }
 
-/* line 100, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
+/* line 104, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
 .header {
   top: 0; }
 
-/* line 104, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
+/* line 108, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
 .footer {
   bottom: 0; }
 
-/* line 109, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
+/* line 113, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
 .headerFirstInternalDiv {
   width: 15%; }
 
-/* line 113, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
+/* line 117, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
 .headerSecondInternalDiv {
   width: 70%;
   left: 15%;
   border-bottom: 1px solid #ECECEC; }
 
-/* line 119, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
+/* line 123, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
 .headerThirdInternalDiv {
   width: 15%;
   right: 0;
@@ -124,7 +129,7 @@ html, body {
   100% {
     opacity: 1; } }
 
-/* line 145, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
+/* line 149, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
 .liveBlinkingCommonStyle, .liveBlinkingDot, .liveBlinkingMessage {
   display: inline-block;
   position: absolute;
@@ -134,55 +139,55 @@ html, body {
   -ms-animation: liveBlinkAnimation 3s infinite;
   animation: liveBlinkAnimation 3s infinite; }
 
-/* line 153, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
+/* line 157, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
 .liveBlinkingDot {
   height: 20px;
   width: 20px;
   left: 10%;
   background-color: red; }
 
-/* line 161, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
+/* line 165, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
 .liveBlinkingMessage {
   left: 35%;
   font-size: 1.7em;
   color: red; }
 
-/* line 167, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
+/* line 171, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
 .headerMessage, .footerMessage {
   color: #055075;
   font-size: 4vmin;
   text-align: center;
   padding-top: 1.5%; }
 
-/* line 173, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
+/* line 177, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
 .headerIPLLogo {
   height: 100%;
   margin-top: 5%; }
 
-/* line 179, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
+/* line 183, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
 .footerMessage {
   padding-left: 2%; }
 
-/* line 187, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
+/* line 191, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
 .afterTossCardBody {
   position: relative;
   height: 80%;
   top: 10%; }
 
-/* line 193, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
+/* line 197, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
 .playingTeamLogoAfterToss {
   display: block;
   height: 40%;
   margin: 30% auto; }
 
-/* line 199, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
+/* line 203, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
 .battingOrBowlingStatusLogo {
   position: absolute;
   height: 20%;
   top: 20%;
   right: 15%; }
 
-/* line 206, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
+/* line 210, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
 .liveBattingOrBowlingStatus {
   color: #055075;
   position: absolute;
@@ -190,7 +195,7 @@ html, body {
   left: 30%;
   font-size: 4vmin; }
 
-/* line 213, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
+/* line 217, /home/anshu/anshu/ipl2017/resources/sass/index.sass */
 .matchInfoStatus {
   margin: 35% auto;
   font-size: 6vmin; }

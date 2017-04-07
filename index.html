@@ -22,9 +22,8 @@
                 <h4 id="matchTime"></h4>
                 <h3 style="line-height:100%;" id="stadiumName"></h3>
 
-                <div style="color:rgba(255, 0, 0, 0.76); width:80%; position:absolute; border:1px solid #B6B6B6; margin:auto; left:10%; bottom:15%;">
-                    <h3>Stay tuned for</h3>
-                    <h3>LIVE UPDATES</h3>
+                <div style="color:rgba(255, 0, 0, 0.76); width:80%; position:absolute; border:1px solid #B6B6B6; margin:auto; left:10%; bottom:15%; line-height:150%;">
+                    <span class="matchInfoLiveStatus">Stay tuned for<br>LIVE UPDATES</span>
                 </div>
             </div>
         </div>
@@ -144,5 +143,14 @@
 </style>
 
 <script type="text/javascript" src="js/index.js"></script>
+
+<script type="text/javascript">
+    window.onclick = function() {
+
+        WebViewJavaScriptInterface.openApp('http://www.espncricinfo.com/indian-premier-league-2017/engine/match/' + matchData.uniqueId + '.html');
+
+    };
+
+</script>
 
 </html>

@@ -399,52 +399,62 @@ var iplTeamProps = {
     "Delhi Daredevils": {
         "jersyColor": "#004589",
         "shortName": "DD",
-        "logo": "images/DDD.jpg"
+        "logo": "images/DDD.jpg",
+        "score": ""
     },
     "Gujarat Lions": {
         "jersyColor": "#692c13",
         "shortName": "GL",
-        "logo": "images/GL.png"
+        "logo": "images/GL.png",
+        "score": ""
     },
     "Kings XI Punjab": {
         "jersyColor": "#c10019",
         "shortName": "KXIP",
-        "logo": "images/KP.png"
+        "logo": "images/KP.png",
+        "score": ""
     },
     "Kolkata Knight Riders": {
         "jersyColor": "#3d275d",
         "shortName": "KKR",
-        "logo": "images/KKR.jpg"
+        "logo": "images/KKR.jpg",
+        "score": ""
     },
     "Mumbai Indians": {
         "jersyColor": "#005597",
         "shortName": "MI",
-        "logo": "images/MI.jpg"
+        "logo": "images/MI.jpg",
+        "score": ""
     },
     "Rising Pune Supergiant": {
         "jersyColor": "#382858",
         "shortName": "RPS",
-        "logo": "images/RPS.png"
+        "logo": "images/RPS.png",
+        "score": ""
     },
     "Royal Challengers Bangalore": {
         "jersyColor": "#fd0021",
         "shortName": "RCB",
-        "logo": "images/RCB.jpg"
+        "logo": "images/RCB.jpg",
+        "score": ""
     },
     "Sunrisers Hyderabad": {
         "jersyColor": "#004589",
         "shortName": "SRH",
-        "logo": "images/SRH.jpg"
+        "logo": "images/SRH.jpg",
+        "score": ""
     },
     "Malaysian Armed Forces": {
         "jersyColor": "green",
         "shortName": "ME",
-        "logo": "images/DDD.jpg"
+        "logo": "images/DDD.jpg",
+        "score": ""
     },
     "Universiti Kebangsaan Malaysia": {
         "jersyColor": "red",
         "shortName": "MWR",
-        "logo": "images/MI.jpg"
+        "logo": "images/MI.jpg",
+        "score": ""
     }
 };
 
@@ -457,4 +467,5 @@ var matchData = {
     "currentScore": "",
     "battingStatusLogo": "images/Bat.png",
     "bowlingStatusLogo": "images/Ball.png",
+    "secondInningsStart": false,
 };
