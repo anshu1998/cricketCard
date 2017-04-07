@@ -15,6 +15,16 @@ class UiHandler extends Scrapper {
             document.title = liveMatchData["innings-requirement"];
 
 
+        } else if ((!liveMatchData.score) && liveMatchData["innings-requirement"].includes('Match scheduled to begin')) {
+            UiHandler.getElement('#firstInnings').style.display = "block";
+            UiHandler.getElement('#firstInnings .headerThirdInternalDiv').style.display = 'block';
+
+            UiHandler.getElement('.playingTeam').innerText = (matchData.playingTeam) ? matchData.playingTeam : '';
+            UiHandler.getElement('.currentScore').innerText = (matchData.currentScore) ? matchData.currentScore : '0/0';
+            UiHandler.getElement('.overs').innerText = (matchData.overs) ? matchData.overs : '0.0';
+
+
+
         } else if (liveMatchData["innings-requirement"].includes("the toss")) {
             UiHandler.getElement('#firstInnings').style.display = "block";
             UiHandler.getElement('#firstInnings .headerThirdInternalDiv').style.display = 'block';

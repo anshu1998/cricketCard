@@ -72,9 +72,11 @@ class Scrapper {
 
     static scrapCricApiResponse(liveMatchData) {
 
-        if (liveMatchData["innings-requirement"].includes('Match scheduled to begin')) {
+        if (liveMatchData["innings-requirement"].includes('Match scheduled to begin') ||
+            (liveMatchData.score === undefined)) {
             return false;
         }
+
 
 
         var scoreDetails = liveMatchData.score,
